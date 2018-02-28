@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { ChartsModule } from 'ng2-charts';
-import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ServerServiceProvider } from '../providers/server-service/server-service';
@@ -16,7 +15,7 @@ import { VerifyServiceProvider } from '../providers/verify-service/verify-servic
 @NgModule({
   declarations: [
     MyApp,
-    TabsPage
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +30,7 @@ import { VerifyServiceProvider } from '../providers/verify-service/verify-servic
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    TabsPage
+  
   ],
   providers: [
     StatusBar,
