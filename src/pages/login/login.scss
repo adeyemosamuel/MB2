@@ -1,3 +1,38 @@
 page-login {
+    // background-image: url('../assets/imgs/fcmb2.jpg') !important;
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
+    ion-content {
+        background-color: rgba(92,38,132,1) !important;
+    }
+   
+.button{
+    height: 50px;
+}
+
+.logo{
+    
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 80px;
+    width: 80px;
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.item1{
+    border: 1px solid #ffb822;
+    border-radius: 20px;
+    background-color: rgba(255,184,34,1);
+}
+
+.item2{
+    border: 1px solid #ffb822;
+    border-radius: 20px;
+    background-color: rgba(255,184,34,1);
+    margin-top: 30px
+}
 }
