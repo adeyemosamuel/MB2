@@ -27,7 +27,7 @@ page-addforms {
         i {
             // margin: 0 auto !important;
             font-size: 30px !important;
-            color: map-get($colors, primary);
+            color: map-get($colors, fcmb);
         }
     }
 
@@ -39,7 +39,7 @@ page-addforms {
 
             i {
                 font-size: 30px !important;
-                color: map-get($colors, primary);
+                color: map-get($colors, fcmb);
             }
         }
     }
@@ -52,7 +52,7 @@ page-addforms {
 
             i {
                 font-size: 60px !important;
-                color: map-get($colors, primary);
+                color: map-get($colors, fcmb);
             }
 
             p {

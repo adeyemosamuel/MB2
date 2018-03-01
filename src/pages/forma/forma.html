@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar color="fcmb">
+    <ion-title text-center>
+      <span text-color="my-custom-color">FORM A</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header> 
+
+
+<ion-content padding>
+    <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-list>
+
+        <div (click)="itemTapped(a)" [ngClass]="a.status" class="general"  *ngFor="let a of FormArray">
+            <h5>Beneficiary:{{a.name}}</h5>
+            <h6>Form Number:{{a.formnumber}}</h6>
+            <p>Status:{{a.status}}</p>
+            <span>Created On:{{a.date}}</span>
+        </div>
+
+    </ion-list>
+
+    <ion-fab right bottom>
+        <button ion-fab color="fcmb2"><ion-icon name="add"></ion-icon></button>
+        
+      </ion-fab>
+
+</ion-content>

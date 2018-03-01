@@ -1,0 +1,29 @@
+
+<ion-header>
+
+    <ion-navbar color="fcmb">
+      <ion-title text-center>
+        <span text-color="my-custom-color">FORM M</span>
+      </ion-title>
+    </ion-navbar>
+  
+  </ion-header> 
+   
+  
+  <ion-content padding>
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems($event)"></ion-searchbar>
+  
+      <ion-list>
+  
+          <div (click)="itemTapped(m)" [ngClass]="m.status" class="general"  *ngFor="let m of FormM">
+              <h5>Beneficiary:{{m.name}}</h5>
+              <h6>Form Number:{{m.formnumber}}</h6>
+              <p>Status:{{m.status}}</p>
+              <span>Created On:{{m.date}}</span>
+          </div>
+  
+      </ion-list>
+  
+  
+  </ion-content>
+  

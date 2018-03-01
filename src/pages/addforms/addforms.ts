@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the AddformsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -19,7 +14,23 @@ export class AddformsPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AddformsPage');
+
+  }
+
+  forma(){
+    this.navCtrl.push('FormaPage');
+  }
+
+  remittance(){
+    this.navCtrl.push('RemittancePage');
+  }
+
+  formnxp(){
+    this.navCtrl.push('FormnxpPage');
+  }
+
+  formm(){
+    this.navCtrl.push('FormmPage');
   }
 
 }
