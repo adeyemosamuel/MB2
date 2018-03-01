@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the Remf3Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { VerifyServiceProvider } from '../../providers/verify-service/verify-service';
+import { AppdataProvider } from '../../providers/appdata/appdata';
 
 @IonicPage()
 @Component({
@@ -15,11 +10,43 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Remf3Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  payment: any;
+  amount: any;
+  charge: any;
+  applied: any;
+  info: any;
+  valid: any;
+  transfer: any;
+  estimated: any;
+  purposeData:any = [];
+  amountData: any =[];
+  chargeData: any= [];
+  accountData: any=[];
+
+  constructor(public navCtrl: NavController,
+    private appdata: AppdataProvider,
+    private verify: VerifyServiceProvider,
+    private alertCtrl: AlertController,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Remf3Page');
+    this.purposeData= this.appdata.getPurpose();
+    this.amountData= this.appdata.getAmount();
+    this.chargeData= this.appdata.getCharge();
+    this.accountData= this.appdata.getAccount();
+  }
+
+  next(){
+    // if (!this.verify.verifyNext3(this.payment, this.amount, this.charge, this.applied, this.info, this.valid, this.transfer,this.estimated)) {
+    //   alert(this.verify.errorMessage);
+    //   this.alertCtrl.create({
+    //     subTitle: 'Message',
+    //     message: this.verify.errorMessage
+    //   }).present();
+    //   return false;
+    // }
+    this.navCtrl.push('Remf4Page');
   }
 
 }
