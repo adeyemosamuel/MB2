@@ -13,7 +13,7 @@
 <ion-content padding>
     <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems($event)"></ion-searchbar>
 
-    <ion-list>
+    <ion-list> 
 
         <div (click)="itemTapped(a)" [ngClass]="a.status" class="general"  *ngFor="let a of FormArray">
             <h5>Beneficiary:{{a.name}}</h5>

@@ -36,7 +36,7 @@ export class FormaPage {
     this.initializeItems();
 
     // set val to the value of the searchbar
-    let val = ev.target.value;
+    let val = ev.target.value; 
 
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
@@ -44,6 +44,12 @@ export class FormaPage {
         return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
+  }
+
+  itemTapped(a){
+    this.navCtrl.push('FormadPage', {
+      a:a
+    });
   }
 
 }

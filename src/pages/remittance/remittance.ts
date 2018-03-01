@@ -48,4 +48,10 @@ export class RemittancePage {
     }
   }
 
+  itemTapped(r){
+    this.navCtrl.push('RemdPage', {
+      r:r
+    });
+  }
+
 }
