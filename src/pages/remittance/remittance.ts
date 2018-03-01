@@ -54,4 +54,8 @@ export class RemittancePage {
     });
   }
 
+  fab(){
+    this.navCtrl.push('RemfPage');
+  }
+
 }

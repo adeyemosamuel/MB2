@@ -52,4 +52,8 @@ export class FormaPage {
     });
   }
 
+  fab(){
+    this.navCtrl.push('FormafPage');
+  }
+
 }
