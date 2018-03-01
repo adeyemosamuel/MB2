@@ -11,11 +11,11 @@ import { AppdataProvider } from '../../providers/appdata/appdata';
 })
 export class FormnxpPage {
 
-  name:any;
+  cname:any;
   formnumber:any;
   status:any;
   date:any;
-  n:any;
+  a:any;
   searchTerm: any;
   FormNXP: Array<any> = [];
 
@@ -42,14 +42,19 @@ export class FormnxpPage {
     // if the value is an empty string don't filter the items
     if (val && val.trim() != '') {
       this.FormNXP = this.FormNXP.filter((item) => {
-        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+        return (item.cname.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
   }
 
   fab(){
-    
+    this.navCtrl.push('FormnfPage');
   }
 
+  itemTapped(a){
+    this.navCtrl.push('FormndPage', {
+      a:a
+    });
+  }
 
 }

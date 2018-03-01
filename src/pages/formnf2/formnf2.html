@@ -1,0 +1,165 @@
+<ion-header>
+
+
+  <ion-navbar color="fcmb">
+    <ion-title text-center>
+      <span text-color="my-custom-color">FORM NXP</span>
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-group>
+    <div class="general">
+      <h4 no-lines color="fcmb" text-color="my-custom-color">BY ORDER OF</h4>
+    </div>
+
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="First Name" [(ngModel)]="fname" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="Last Name" [(ngModel)]="lname" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="Address" [(ngModel)]="address" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">City</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="city">
+          <ion-option class="option" [value]="c.city" *ngFor="let c of cityData">{{c.city}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">State</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="states">
+          <ion-option *ngFor="let s of stateData">{{s.label}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+
+    <div>
+      <span class="states" text-color="my-custom-color2">Country</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="countries">
+          <ion-option class="option" [value]="c.country" *ngFor="let c of countryData">{{c.country}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div class="general">
+      <h4 no-lines color="fcmb" text-color="my-custom-color">PAYMENT DETAILS</h4>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">*Transfer Account</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="account">
+          <ion-option class="option" [value]="a.account" *ngFor="let a of accountData">{{a.account}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">Domiciliary Account</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="domiciliary">
+          <ion-option class="option" [value]="d.domiciliary" *ngFor="let d of domiciliaryData">{{d.domiciliary}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="*Domiciliary Amount" [(ngModel)]="domammount" type="number"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">*Form Purpose Code</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="formpurpose">
+          <ion-option class="option" [value]="f.formpurpose" *ngFor="let f of formpurposeData">{{f.formpurpose}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="*Pin Code" [(ngModel)]="pincode" type="number"></ion-input>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">*Charge Account</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="charge">
+          <ion-option class="option" [value]="c.charge" *ngFor="let c of chargeData">{{c.charge}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <span class="states" text-color="my-custom-color2">*Prefix</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-select class="Select" [(ngModel)]="prefix">
+          <ion-option class="option" [value]="p.prefix" *ngFor="let p of prefixData">{{p.prefix}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input placeholder="Due Date Payment" [(ngModel)]="date" type="number"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="button">
+      <button ion-button block tappable color="fcmb2" (click)="next()">
+        <span style="font-weight:bold; color:white">NEXT</span>
+      </button>
+    </div>
+
+  </ion-item-group>
+</ion-content>

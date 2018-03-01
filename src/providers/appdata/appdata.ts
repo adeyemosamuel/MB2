@@ -20,6 +20,17 @@ export class AppdataProvider {
         return data;
     }
 
+    getMethod(): any{
+        let data=[
+            {"method":"Cash"},
+            {"method":"Cheque"},
+            {"method":"Bank Draft"},
+            {"method":"Bank Transfer"},
+            {"method":"Internet Banking"}
+        ];
+        return data;
+    }
+
 
     getPurpose(): any{
         let data=[
@@ -45,11 +56,78 @@ export class AppdataProvider {
 
     getCharge(): any{
         let data=[
-            {"charge":"$100"},
-            {"charge":"$110"},
-            {"charge":"$120"},
-            {"charge":"$130"},
-            {"charge":"$140"}
+            {"charge":"Current"},
+            {"charge":"Savings"},
+            {"charge":"Domiciliary"},
+            {"charge":"Corporate"},
+            {"charge":"Salary"}
+        ];
+        return data;
+    }
+
+    getFormP(): any{
+        let data=[
+            {"formpurpose":"001"},
+            {"formpurpose":"002"},
+            {"formpurpose":"003"},
+            {"formpurpose":"004"},
+            {"formpurpose":"005"}
+        ];
+        return data;
+    }
+
+    getPrefix(): any{
+        let data=[
+            {"prefix":"A"},
+            {"prefix":"B"},
+            {"prefix":"C"},
+            {"prefix":"D"},
+            {"prefix":"E"}
+        ];
+        return data;
+    }
+
+    getDischarge(): any{
+        let data=[
+            {"discharge":"Apapa"},
+            {"discharge":"Warri"},
+            {"discharge":"Portharcourt"},
+            {"discharge":"Delta"}
+        ];
+        return data;
+    }
+
+    getShipment(): any{
+        let data=[
+            {"shipment":"China Mainland"},
+            {"shipment":"Singapore"},
+            {"shipment":"South Korea"},
+            {"shipment":"Japan"}
+        ];
+        return data;
+    }
+
+    getCurrency(): any{
+        let data=[
+            {"currency":"USD"},
+            {"currency":"Naira"},
+            {"currency":"Euro"},
+            {"currency":"Pounds"},
+            {"currency":"Yuan"}
+        ];
+        return data;
+    }
+
+
+
+
+    getCity(): any{
+        let data=[
+            {"city":"Ibadan"},
+            {"city":"Akure"},
+            {"city":"Enugu"},
+            {"city":"Abeokuta"},
+            {"city":"Oshogbo"}
         ];
         return data;
     }
@@ -61,6 +139,17 @@ export class AppdataProvider {
             {"account":"American Express"},
             {"account":"Paypal"},
             {"account":"City Bank"}
+        ];
+        return data;
+    }
+
+    getDomiciliary(): any{
+        let data=[
+            {"domiciliary":"FCMB"},
+            {"domiciliary":"GTB"},
+            {"domiciliary":"Access"},
+            {"domiciliary":"Diamond"},
+            {"domiciliary":"Wema"}
         ];
         return data;
     }
@@ -529,6 +618,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Busola Ogunjemilua",
+                "cfname": "Busola",
+                "clname": "Ogunjemilua",
+                "caddress":"8, Ajelogo Road, Ketu",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -575,6 +668,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Ayanwale Adenuga",
+                "cfname": "Ayanwale",
+                "clname": "Adenuga",
+                "caddress":"10, Ketu Road, Ikeja",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -621,6 +718,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Temmy Aganga",
+                "cfname": "Temmy",
+                "clname": "Aganga",
+                "caddress":"19, Lukuman Street, Ojota",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -667,6 +768,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname": "Chigbo Joseph",
+                "cfname": "Chigbo",
+                "clname": "Joseph",
+                "caddress":"1, Oyo Street, Maryland",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -712,6 +817,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname": "Oyerike Aderike",
+                "cfname": "Oyerike",
+                "clname": "Aderike",
+                "caddress":"112, Jibowu Street, Yaba",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -758,6 +867,10 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Ajisafe Tosin",
+                "cfname": "Ajisafe",
+                "clname": "Tosin",
+                "caddress":"15, Alagbaka Street, Akure",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -801,8 +914,8 @@ export class AppdataProvider {
         let data = [
             {
                 "id":"1",
-                "name": "Janet Peace O.",
-                "address": "7, Obalende Street, off Agege Road",
+                "name": "Adeyemo Samuel O.",
+                "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08170087989",
                 "email": "trade@fcmb.com",
@@ -812,12 +925,16 @@ export class AppdataProvider {
                 "route": "Off Agege road",
                 "idnumber": "A234567890",
                 "comments": "I love this app",
-                "bname": "Iyanu Badmus",
+                "bname": "Mike Olawale",
                 "baddress":"5, Joel Ogunsola, Ikeja",
                 "bphone":"07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Busola Ogunjemilua",
+                "cfname": "Busola",
+                "clname": "Ogunjemilua",
+                "caddress":"8, Ajelogo Road, Ketu",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -847,7 +964,7 @@ export class AppdataProvider {
 
             {
                 "id":"2",
-                "name": "Okoro Azeez Olusegun",
+                "name": "Iyanu Adebayo Hakeem",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08170087989",
@@ -858,12 +975,16 @@ export class AppdataProvider {
                 "route": "Off Agege road",
                 "idnumber": "A234567890",
                 "comments": "I love this app",
-                "bname": "Jide Ogungbe",
+                "bname": "Mike Olawale",
                 "baddress":"5, Joel Ogunsola, Ikeja",
                 "bphone":"07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Ayanwale Adenuga",
+                "cfname": "Ayanwale",
+                "clname": "Adenuga",
+                "caddress":"10, Ketu Road, Ikeja",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -893,7 +1014,7 @@ export class AppdataProvider {
 
             {
                 "id":"3",
-                "name": "Omolola Sanni",
+                "name": "Mike Ayodeji Olawale",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08062820179",
@@ -904,12 +1025,16 @@ export class AppdataProvider {
                 "route": "Off Agege road",
                 "idnumber": "A234567890",
                 "comments": "I love this app",
-                "bname": "Akinyomi Olufemi",
+                "bname": "Mike Ayodeji Olawale",
                 "baddress":"5, Joel Ogunsola, Ikeja",
                 "bphone":"07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
+                "cname":"Temmy Aganga",
+                "cfname": "Temmy",
+                "clname": "Aganga",
+                "caddress":"19, Lukuman Street, Ojota",
                 "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
@@ -939,7 +1064,7 @@ export class AppdataProvider {
 
             {
                 "id":"4",
-                "name": "Titus George",
+                "name": "Yakubu Dogara George",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08062820179",
@@ -956,7 +1081,11 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "ibname":"Ajiboye Adekola",
+                "cname": "Chigbo Joseph",
+                "cfname": "Chigbo",
+                "clname": "Joseph",
+                "caddress":"1, Oyo Street, Maryland",
+                "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
                 "ibcity":"Idumota",
@@ -984,7 +1113,7 @@ export class AppdataProvider {
             },
             {
                 "id":"5",
-                "name": "Rasaq Ibrahim",
+                "name": "Francis Finish Futa",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08062820179",
@@ -1001,7 +1130,11 @@ export class AppdataProvider {
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "ibname":"Rose Nonye",
+                "cname": "Oyerike Aderike",
+                "cfname": "Oyerike",
+                "clname": "Aderike",
+                "caddress":"112, Jibowu Street, Yaba",
+                "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
                 "ibcity":"Idumota",
@@ -1030,7 +1163,7 @@ export class AppdataProvider {
 
             {
                 "id":"6",
-                "name": "Oluwaseun Agbaje",
+                "name": "Emmanuel Martins Olajide",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
                 "phone": "08062820179",
@@ -1041,13 +1174,17 @@ export class AppdataProvider {
                 "route": "Off Agege road",
                 "idnumber": "A234567890",
                 "comments": "I love this app",
-                "bname": "Ayodeji Alabi",
+                "bname": "Mike Ayodeji Olawale",
                 "baddress":"5, Joel Ogunsola, Ikeja",
                 "bphone":"07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "ibname":"Victoria Olabode",
+                "cname":"Ajisafe Tosin",
+                "cfname": "Ajisafe",
+                "clname": "Tosin",
+                "caddress":"15, Alagbaka Street, Akure",
+                "ibname":"Ismail Olabode",
                 "ibswiftcode":"2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
                 "ibcity":"Idumota",
@@ -1073,6 +1210,9 @@ export class AppdataProvider {
                 "date":"21/02/18"
 
             }
+
+
+
 
 
 

@@ -112,4 +112,119 @@ export class VerifyServiceProvider {
     return true;
   }
 
+
+  verifyFormNXP(name,address,city,states,phone,nepc,rcnumber,method,cfname, clname,caddress,countries): boolean{
+    if (name == null || name == '') {
+      this.errorMessage = 'Enter Full name'; 
+      return false;
+    }
+
+    if (address == null || address == '') {
+      this.errorMessage = 'Enter Address'; 
+      return false;
+    }
+
+    if (city == null || city == '') {
+      this.errorMessage = 'Select a city'; 
+      return false;
+    }
+
+    if (states == null || states == '') {
+      this.errorMessage = 'Select a state'; 
+      return false;
+    }
+
+
+    if (phone == null || phone == '') {
+      this.errorMessage = 'Enter Valid Phone Number'; 
+      return false;
+    }
+
+    if (nepc == null || nepc == '') {
+      this.errorMessage = 'Enter NEPC Reg No'; 
+      return false;
+    }
+
+    if (rcnumber == null || rcnumber == '') {
+      this.errorMessage = 'Enter RC Number'; 
+      return false;
+    }
+
+    if (method == null || method == '') {
+      this.errorMessage = 'Select Method of Payment'; 
+      return false;
+    }
+
+    if (cfname == null || cfname == '') {
+      this.errorMessage = 'Enter Consignee First Name'; 
+      return false;
+    }
+
+    if (clname == null || clname == '') {
+      this.errorMessage = 'Enter Consignee Last Name'; 
+      return false;
+    }
+
+    if (caddress == null || caddress == '') {
+      this.errorMessage = 'Enter Consignee Address'; 
+      return false;
+    }
+
+    if (countries == null || countries == '') {
+      this.errorMessage = 'Select Consignee Country'; 
+      return false;
+    }
+    return true;
+  }
+
+
+  verifyFormNXP2(fname,
+    lname,
+    address,
+    city,
+    states,
+    countries,
+    account,
+    domiciliary,
+    domammount,
+    formpurpose,
+    pincode,
+    charge,
+    prefix,
+    date): boolean{
+    if (account == null || account == '') {
+      this.errorMessage = 'Select Transfer Account'; 
+      return false;
+    }
+
+    if (formpurpose == null || formpurpose == '') {
+      this.errorMessage = 'Select Form Purpose Code'; 
+      return false;
+    }
+
+    if (pincode == null || pincode == '') {
+      this.errorMessage = 'Enter Pin Code'; 
+      return false;
+    }
+
+    if (charge == null || charge == '') {
+      this.errorMessage = 'Select Charge Account'; 
+      return false;
+    }
+
+
+    if (domammount == null || domammount == '') {
+      this.errorMessage = 'Enter Domiciliary Amount'; 
+      return false;
+    }
+
+    if (prefix == null || prefix == '') {
+      this.errorMessage = 'Select Prefix'; 
+      return false;
+    }
+
+   
+    return true;
+  }
+
 }

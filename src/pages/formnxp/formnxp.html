@@ -13,18 +13,18 @@
   <ion-content padding>
       <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems($event)"></ion-searchbar>
   
-      <ion-list>
+      <ion-list> 
   
-          <div (click)="itemTapped(n)" [ngClass]="n.status" class="general"  *ngFor="let n of FormNXP">
-              <h5>Beneficiary:{{n.name}}</h5>
-              <h6>Form Number:{{n.formnumber}}</h6>
-              <p>Status:{{n.status}}</p>
-              <span>Created On:{{n.date}}</span>
+          <div (click)="itemTapped(a)"  [ngClass]="a.status" class="general"  *ngFor="let a of FormNXP">
+              <h5>Consignee:{{a.cname}}</h5>
+              <h6>Form Number:{{a.formnumber}}</h6>
+              <p>Status:{{a.status}}</p>
+              <span>Created On:{{a.date}}</span>
           </div>
   
       </ion-list>
   
-      <ion-fab right bottom  (click)="fab()">
+      <ion-fab right bottom (click)="fab()">
           <button ion-fab color="fcmb2"><ion-icon name="add"></ion-icon></button>
           
         </ion-fab>
