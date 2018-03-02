@@ -15,14 +15,14 @@
   
       <ion-list>
   
-          <div (click)="itemTapped(m)" [ngClass]="m.status" class="general"  *ngFor="let m of FormM">
+          <div (click)="itemTapped(m)" [ngClass]="m.status2" class="general"  *ngFor="let m of FormM">
               <h5>Beneficiary:{{m.name}}</h5>
               <h6>Form Number:{{m.formnumber}}</h6>
-              <p>Status:{{m.status}}</p>
-              <span>Created On:{{m.date}}</span>
+              <p>Status:{{m.status2}}</p> 
+              <span>Created On:{{m.date}}</span> 
           </div>
   
-      </ion-list>
+      </ion-list> 
   
   
   </ion-content>

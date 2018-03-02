@@ -1,0 +1,133 @@
+<ion-header>
+
+    <ion-navbar color="fcmb">
+        <ion-title text-center>
+          <span text-color="my-custom-color">FORM M</span>
+        </ion-title>
+    
+      </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item-group>
+    <div class="general">
+      <h4 no-lines color="fcmb" text-color="my-custom-color">GENERAL DETAILS</h4>
+    </div>
+
+    <div class="states">
+        <span text-color="my-custom-color2">Form Number</span>
+      </div>
+      <div>
+        <ion-item style="color:white" no-lines class="item1">
+          <ion-input [(ngModel)]="formnumber" [readonly]="isReadonly()" type="text"></ion-input>
+        </ion-item>
+      </div>
+
+    <div class="states">
+      <span text-color="my-custom-color2">Name</span>
+    </div>
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input [(ngModel)]="name" [readonly]="isReadonly()" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="states">
+      <span text-color="my-custom-color2">Address 1</span>
+    </div>
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input [(ngModel)]="address" [readonly]="isReadonly()" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="states">
+      <span text-color="my-custom-color2">Address 2</span>
+    </div>
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input [(ngModel)]="address2" [readonly]="isReadonly()" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="states">
+      <span text-color="my-custom-color2">City</span>
+    </div>
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input [ngModel]="selectedItem?.city" (ngModelChange)="selectedItem.city= $event" [readonly]="isReadonly()" type="text"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="states">
+      <span text-color="my-custom-color2">Phone</span>
+    </div>
+    <div>
+      <ion-item style="color:white" no-lines class="item1">
+        <ion-input  [ngModel]="selectedItem?.phone" (ngModelChange)="selectedItem.phone= $event" [readonly]="isReadonly()" type="number"></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="states">
+        <span text-color="my-custom-color2">TIN</span>
+      </div>
+      <div>
+        <ion-item style="color:white" no-lines class="item1">
+          <ion-input  [ngModel]="selectedItem?.tin" (ngModelChange)="selectedItem.tin= $event" [readonly]="isReadonly()" type="text"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="general">
+          <h4 no-lines color="fcmb" text-color="my-custom-color">BENEFICIARY DETAILS</h4>
+        </div>
+
+        <div class="states">
+            <span text-color="my-custom-color2">Name</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input [ngModel]="selectedItem?.bname" (ngModelChange)="selectedItem.bname= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+      
+          <div class="states">
+            <span text-color="my-custom-color2">Address 1</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input [ngModel]="selectedItem?.address3" (ngModelChange)="selectedItem.address3= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+      
+          <div class="states">
+            <span text-color="my-custom-color2">Address 2</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input  [ngModel]="selectedItem?.address4" (ngModelChange)="selectedItem.address4= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+      
+          <div class="states">
+            <span text-color="my-custom-color2">Country</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input  [ngModel]="selectedItem?.country" (ngModelChange)="selectedItem.country= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="button">
+              <button ion-button block tappable color="fcmb2" (click)="next()">
+                <span style="font-weight:bold; color:white">NEXT</span>
+              </button>
+            </div>
+
+    
+
+  </ion-item-group>
+
+</ion-content>

@@ -12,8 +12,8 @@ import { AppdataProvider } from '../../providers/appdata/appdata';
 export class FormmPage {
 
   name:any;
-  formnumber:any;
-  status:any;
+  formnumber:any; 
+  status2:any;
   date:any;
   m:any;
   searchTerm: any;
@@ -26,6 +26,12 @@ export class FormmPage {
   ionViewDidLoad() {
     this.FormM= this.appdata.getMoney();
    
+  }
+
+  itemTapped(m){
+    this.navCtrl.push('MdPage', {
+      m:m,
+    });
   }
 
 

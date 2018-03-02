@@ -1,0 +1,77 @@
+
+<ion-header>
+
+    <ion-navbar color="fcmb">
+        <ion-title text-center>
+          <span text-color="my-custom-color">FORM M</span>
+        </ion-title>
+    
+      </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div class="general">
+        <h4 no-lines color="fcmb" text-color="my-custom-color">GOODS DETAILS</h4>
+      </div>
+
+
+    <div class="states">
+        <span text-color="my-custom-color2">General description of goods</span>
+      </div>
+      <div>
+        <ion-item style="color:white" no-lines class="item1">
+          <ion-input  [ngModel]="selectedItem3?.description" (ngModelChange)="selectedItem3.description= $event" [readonly]="isReadonly()" type="text"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="states">
+          <span text-color="my-custom-color2">Gross Weight</span>
+        </div>
+        <div>
+          <ion-item style="color:white" no-lines class="item1">
+            <ion-input [ngModel]="selectedItem3?.gross" (ngModelChange)="selectedItem3.gross= $event" [readonly]="isReadonly()" type="text"></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="states">
+            <span text-color="my-custom-color2">Net Weight(Kg)</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input  [ngModel]="selectedItem3?.weight" (ngModelChange)="selectedItem3.weight= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+
+
+        <div class="states">
+            <span text-color="my-custom-color2">Total No of Items</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input  [ngModel]="selectedItem3?.quantity" (ngModelChange)="selectedItem3.quantity= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+
+
+        <div class="states">
+            <span text-color="my-custom-color2">Total FOB Value</span>
+          </div>
+          <div>
+            <ion-item style="color:white" no-lines class="item1">
+              <ion-input  [ngModel]="selectedItem3?.fob" (ngModelChange)="selectedItem3.fob= $event" [readonly]="isReadonly()" type="text"></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="states">
+              <span text-color="my-custom-color2">Total Freight Charges</span>
+            </div>
+            <div>
+              <ion-item style="color:white" no-lines class="item1">
+                <ion-input  [ngModel]="selectedItem3?.freight" (ngModelChange)="selectedItem3.freight= $event" [readonly]="isReadonly()" type="text"></ion-input>
+              </ion-item>
+            </div>
+
+</ion-content>
