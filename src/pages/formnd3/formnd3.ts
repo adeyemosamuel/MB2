@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AppdataProvider } from '../../providers/appdata/appdata';
-import { DatePicker } from '@ionic-native/date-picker';
+// import { DatePicker } from '@ionic-native/date-picker';
 
 
 @IonicPage()
@@ -17,18 +17,11 @@ export class Formnd3Page {
   currencyData: any = [];
 
   constructor(public navCtrl: NavController, 
-    private datePicker: DatePicker,
+    // private datePicker: DatePicker,
     private appdata: AppdataProvider,
     public navParams: NavParams) {
 
-      this.datePicker.show({
-        date: new Date(),
-        mode: 'date',
-        androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
-      }).then(
-        date => console.log('Got date: ', date),
-        err => console.log('Error occurred while getting date: ', err)
-      );
+    
   }
 
   ionViewDidLoad() {
