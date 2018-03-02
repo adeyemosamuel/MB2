@@ -47,7 +47,7 @@ export class Formnf3Page {
   }
 
   ionViewDidLoad() {
-   this.shipment=this.appdata.getShipment();
+   this.shipmentData=this.appdata.getShipment();
    this.dischargeData=this.appdata.getDischarge();
    this.currencyData=this.appdata.getCurrency();
   }
