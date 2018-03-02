@@ -60,7 +60,7 @@ prefixData: any = [];
     this.prefixData=this.appdata.getPrefix();
   }
 
-  next(){
+  next(){ 
     // if (!this.verify.verifyFormNXP2(this.fname,this.lname,this.address,this.city,this.states,this.countries,this.account,this.domiciliary,this.domammount,this.formpurpose,
     //   this.pincode,this.charge,this.prefix,this.date)) {
     //   alert(this.verify.errorMessage);

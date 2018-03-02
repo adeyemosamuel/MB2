@@ -227,4 +227,97 @@ export class VerifyServiceProvider {
     return true;
   }
 
+
+  verifyFormNXP3(sdate,
+    shipment,
+    pdate,
+    discharge,
+    proforma,
+    description,
+    quantity,
+    weight,
+    currency,
+    fob,
+    cf,
+    hs,
+    gross,
+    goods,
+    freight): boolean{
+    if (sdate == null || sdate == '') {
+      this.errorMessage = 'Select Shipment Date'; 
+      return false;
+    }
+
+    if (shipment == null || shipment == '') {
+      this.errorMessage = 'Select Expected Port of Shipment'; 
+      return false;
+    }
+
+    if (discharge == null || discharge == '') {
+      this.errorMessage = 'Select Port of destination/discharge'; 
+      return false;
+    }
+
+    if (description == null || description == '') {
+      this.errorMessage = 'Enter goods description'; 
+      return false;
+    }
+
+
+    if (quantity == null || quantity == '') {
+      this.errorMessage = 'Enter Total Quantity'; 
+      return false;
+    }
+
+    if (weight == null || weight == '') {
+      this.errorMessage = 'Enter Weight Value'; 
+      return false;
+    }
+
+
+    if (currency == null || currency == '') {
+      this.errorMessage = 'Select Currency'; 
+      return false;
+    }
+
+
+    if (fob == null || fob == '') {
+      this.errorMessage = 'Enter FOB Value'; 
+      return false;
+    }
+
+
+    if (cf == null || cf == '') {
+      this.errorMessage = 'Enter Total C & F Value'; 
+      return false;
+    }
+
+
+    if (hs == null || hs == '') {
+      this.errorMessage = 'Enter No of items expected'; 
+      return false;
+    }
+
+
+    if (gross == null || gross == '') {
+      this.errorMessage = 'Enter Gross Weight/Mass'; 
+      return false;
+    }
+
+
+    if (goods == null || goods == '') {
+      this.errorMessage = 'Enter Total Value of Goods'; 
+      return false;
+    }
+
+
+    if (freight == null || freight == '') {
+      this.errorMessage = 'Enter Total Freight Charges'; 
+      return false;
+    }
+
+   
+    return true;
+  }
+
 }

@@ -47,3 +47,21 @@ cfname:any;
 clname:any;
 caddress:any;
 countries:any;
+
+
+
+<ion-item>
+      
+      <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="MMM DD YYYY" [(ngModel)]="dateOfBirth"></ion-datetime>
+    </ion-item>
+
+
+     <div>
+      <span class="states" text-color="my-custom-color2">Due Date Payment</span>
+    </div>
+
+    <div>
+      <ion-item style="color:white" no-lines class="item2">
+        <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="MMM DD YYYY" [(ngModel)]="date"></ion-datetime>
+      </ion-item>
+    </div>

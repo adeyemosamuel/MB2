@@ -644,6 +644,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789320",
+                "fname":"Jide",
+                "lname":"Adeyemi",
                 "status":"Approved",
                 "date":"26/02/18"
 
@@ -694,6 +696,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789321",
+                "fname":"Wale",
+                "lname":"Aminat",
                 "status":"Submitted",
                 "date":"25/02/18"
 
@@ -744,6 +748,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789322",
+                "fname":"Goke",
+                "lname":"David",
                 "status":"Saved",
                 "date":"24/02/18"
 
@@ -794,6 +800,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789323",
+                "fname":"Isreal",
+                "lname":"Adedayo",
                 "status":"Submitted",
                 "date":"23/02/18"
 
@@ -843,6 +851,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789324",
+                "fname":"Kazeem",
+                "lname":"Wasiu",
                 "status":"Approved",
                 "date":"22/02/18"
 
@@ -893,6 +903,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789325",
+                "fname":"Joy",
+                "lname":"Kwere",
                 "status":"Submitted",
                 "date":"21/02/18"
 
@@ -957,6 +969,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789320",
+                "fname":"Mide",
+                "lname":"Adejoke",
                 "status":"Approved",
                 "date":"26/02/18"
 
@@ -1007,6 +1021,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789321",
+                "fname":"Temitayo",
+                "lname":"Oluwaseun",
                 "status":"Submitted",
                 "date":"25/02/18"
 
@@ -1057,6 +1073,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789322",
+                "fname":"Prosper",
+                "lname":"Otemuyiwa",
                 "status":"Saved",
                 "date":"24/02/18"
 
@@ -1107,6 +1125,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789323",
+                "fname":"Miracle",
+                "lname":"Ayodeji",
                 "status":"Submitted",
                 "date":"23/02/18"
 
@@ -1156,6 +1176,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789324",
+                "fname":"Banjo",
+                "lname":"Emmanuel",
                 "status":"Approved",
                 "date":"22/02/18"
 
@@ -1206,6 +1228,8 @@ export class AppdataProvider {
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789325",
+                "fname":"Ronke",
+                "lname":"Adebimpe",
                 "status":"Submitted",
                 "date":"21/02/18"
 
