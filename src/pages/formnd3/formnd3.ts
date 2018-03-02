@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AppdataProvider } from '../../providers/appdata/appdata';
+import { DatePicker } from '@ionic-native/date-picker';
 
-/**
- * Generated class for the Formnd3Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +10,40 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'formnd3.html',
 })
 export class Formnd3Page {
+  selectedItem3: any;
+  selectedItem2:any;
+  shipmentData: any = [];
+  dischargeData: any = [];
+  currencyData: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, 
+    private datePicker: DatePicker,
+    private appdata: AppdataProvider,
+    public navParams: NavParams) {
+
+      this.datePicker.show({
+        date: new Date(),
+        mode: 'date',
+        androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+      }).then(
+        date => console.log('Got date: ', date),
+        err => console.log('Error occurred while getting date: ', err)
+      );
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Formnd3Page');
+    this.selectedItem3 = this.navParams.get('selectedItem2');
+    this.shipmentData=this.appdata.getShipment();
+    this.dischargeData=this.appdata.getDischarge();
+    this.currencyData=this.appdata.getCurrency();
+  }
+
+  save(){
+
+  }
+
+  submit(){
+    
   }
 
 }

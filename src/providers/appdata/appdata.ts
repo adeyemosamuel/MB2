@@ -9,147 +9,147 @@ export class AppdataProvider {
         console.log('Hello AppdataProvider Provider');
     }
 
-    getID(): any{
-        let data=[
-            {"mode":"International Passport"},
-            {"mode":"Driver's License"},
-            {"mode":"National ID Card"},
-            {"mode":"Voter's Card"},
-            {"mode":"Resident Permit"}
+    getID(): any {
+        let data = [
+            { "mode": "International Passport" },
+            { "mode": "Driver's License" },
+            { "mode": "National ID Card" },
+            { "mode": "Voter's Card" },
+            { "mode": "Resident Permit" }
         ];
         return data;
     }
 
-    getMethod(): any{
-        let data=[
-            {"method":"Cash"},
-            {"method":"Cheque"},
-            {"method":"Bank Draft"},
-            {"method":"Bank Transfer"},
-            {"method":"Internet Banking"}
-        ];
-        return data;
-    }
-
-
-    getPurpose(): any{
-        let data=[
-            {"purpose":"Shipment of A"},
-            {"purpose":"Shipment of B"},
-            {"purpose":"Shipment of C"},
-            {"purpose":"Shipment of D"},
-            {"purpose":"Shipment of E"}
-        ];
-        return data;
-    }
-
-    getAmount(): any{
-        let data=[
-            {"amount":"$1000"},
-            {"amount":"$1100"},
-            {"amount":"$1200"},
-            {"amount":"$1300"},
-            {"amount":"$1400"}
-        ];
-        return data;
-    }
-
-    getCharge(): any{
-        let data=[
-            {"charge":"Current"},
-            {"charge":"Savings"},
-            {"charge":"Domiciliary"},
-            {"charge":"Corporate"},
-            {"charge":"Salary"}
-        ];
-        return data;
-    }
-
-    getFormP(): any{
-        let data=[
-            {"formpurpose":"001"},
-            {"formpurpose":"002"},
-            {"formpurpose":"003"},
-            {"formpurpose":"004"},
-            {"formpurpose":"005"}
-        ];
-        return data;
-    }
-
-    getPrefix(): any{
-        let data=[
-            {"prefix":"A"},
-            {"prefix":"B"},
-            {"prefix":"C"},
-            {"prefix":"D"},
-            {"prefix":"E"}
-        ];
-        return data;
-    }
-
-    getDischarge(): any{
-        let data=[
-            {"discharge":"Apapa"},
-            {"discharge":"Warri"},
-            {"discharge":"Portharcourt"},
-            {"discharge":"Delta"}
-        ];
-        return data;
-    }
-
-    getShipment(): any{
-        let data=[
-            {"shipment":"China Mainland"},
-            {"shipment":"Singapore"},
-            {"shipment":"South Korea"},
-            {"shipment":"Japan"}
-        ];
-        return data;
-    }
-
-    getCurrency(): any{
-        let data=[
-            {"currency":"USD"},
-            {"currency":"Naira"},
-            {"currency":"Euro"},
-            {"currency":"Pounds"},
-            {"currency":"Yuan"}
+    getMethod(): any {
+        let data = [
+            { "method": "Cash" },
+            { "method": "Cheque" },
+            { "method": "Bank Draft" },
+            { "method": "Bank Transfer" },
+            { "method": "Internet Banking" }
         ];
         return data;
     }
 
 
-
-
-    getCity(): any{
-        let data=[
-            {"city":"Ibadan"},
-            {"city":"Akure"},
-            {"city":"Enugu"},
-            {"city":"Abeokuta"},
-            {"city":"Oshogbo"}
+    getPurpose(): any {
+        let data = [
+            { "purpose": "Shipment of A" },
+            { "purpose": "Shipment of B" },
+            { "purpose": "Shipment of C" },
+            { "purpose": "Shipment of D" },
+            { "purpose": "Shipment of E" }
         ];
         return data;
     }
 
-    getAccount(): any{
-        let data=[
-            {"account":"Barclays"},
-            {"account":"Swiss"},
-            {"account":"American Express"},
-            {"account":"Paypal"},
-            {"account":"City Bank"}
+    getAmount(): any {
+        let data = [
+            { "amount": "$1000" },
+            { "amount": "$1100" },
+            { "amount": "$1200" },
+            { "amount": "1300" },
+            { "amount": "$1400" }
         ];
         return data;
     }
 
-    getDomiciliary(): any{
-        let data=[
-            {"domiciliary":"FCMB"},
-            {"domiciliary":"GTB"},
-            {"domiciliary":"Access"},
-            {"domiciliary":"Diamond"},
-            {"domiciliary":"Wema"}
+    getCharge(): any {
+        let data = [
+            { "charge": "Current" },
+            { "charge": "Savings" },
+            { "charge": "Domiciliary" },
+            { "charge": "Corporate" },
+            { "charge": "Salary" }
+        ];
+        return data;
+    }
+
+    getFormP(): any {
+        let data = [
+            { "formpurpose": "001" },
+            { "formpurpose": "002" },
+            { "formpurpose": "003" },
+            { "formpurpose": "004" },
+            { "formpurpose": "005" }
+        ];
+        return data;
+    }
+
+    getPrefix(): any {
+        let data = [
+            { "prefix": "A" },
+            { "prefix": "B" },
+            { "prefix": "C" },
+            { "prefix": "D" },
+            { "prefix": "E" }
+        ];
+        return data;
+    }
+
+    getDischarge(): any {
+        let data = [
+            { "discharge": "Apapa" },
+            { "discharge": "Warri" },
+            { "discharge": "Portharcourt" },
+            { "discharge": "Delta" }
+        ];
+        return data;
+    }
+
+    getShipment(): any {
+        let data = [
+            { "shipment": "China Mainland" },
+            { "shipment": "Singapore" },
+            { "shipment": "South Korea" },
+            { "shipment": "Japan" }
+        ];
+        return data;
+    }
+
+    getCurrency(): any {
+        let data = [
+            { "currency": "USD" },
+            { "currency": "Naira" },
+            { "currency": "Euro" },
+            { "currency": "Pounds" },
+            { "currency": "Yuan" }
+        ];
+        return data;
+    }
+
+
+
+
+    getCity(): any {
+        let data = [
+            { "city": "Ibadan" },
+            { "city": "Akure" },
+            { "city": "Enugu" },
+            { "city": "Abeokuta" },
+            { "city": "Oshogbo" }
+        ];
+        return data;
+    }
+
+    getAccount(): any {
+        let data = [
+            { "account": "Barclays" },
+            { "account": "Swiss" },
+            { "account": "American Express" },
+            { "account": "Paypal" },
+            { "account": "City Bank" }
+        ];
+        return data;
+    }
+
+    getDomiciliary(): any {
+        let data = [
+            { "domiciliary": "FCMB" },
+            { "domiciliary": "GTB" },
+            { "domiciliary": "Access" },
+            { "domiciliary": "Diamond" },
+            { "domiciliary": "Wema" }
         ];
         return data;
     }
@@ -600,7 +600,7 @@ export class AppdataProvider {
 
         let data = [
             {
-                "id":"1",
+                "id": "1",
                 "name": "Adeyemo Samuel O.",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -613,46 +613,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Busola Ogunjemilua",
+                "cname": "Busola Ogunjemilua",
                 "cfname": "Busola",
                 "clname": "Ogunjemilua",
-                "caddress":"8, Ajelogo Road, Ketu",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "8, Ajelogo Road, Ketu",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789320",
-                "fname":"Jide",
-                "lname":"Adeyemi",
-                "status":"Approved",
-                "date":"26/02/18"
+                "fname": "Jide",
+                "lname": "Adeyemi",
+                "status": "Approved",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "26/02/18"
 
             },
 
             {
-                "id":"2",
+                "id": "2",
                 "name": "Iyanu Adebayo Hakeem",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -665,46 +679,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Ayanwale Adenuga",
+                "cname": "Ayanwale Adenuga",
                 "cfname": "Ayanwale",
                 "clname": "Adenuga",
-                "caddress":"10, Ketu Road, Ikeja",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "10, Ketu Road, Ikeja",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789321",
-                "fname":"Wale",
-                "lname":"Aminat",
-                "status":"Submitted",
-                "date":"25/02/18"
+                "fname": "Wale",
+                "lname": "Aminat",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "25/02/18"
 
             },
 
             {
-                "id":"3",
+                "id": "3",
                 "name": "Mike Ayodeji Olawale",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -717,46 +745,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Temmy Aganga",
+                "cname": "Temmy Aganga",
                 "cfname": "Temmy",
                 "clname": "Aganga",
-                "caddress":"19, Lukuman Street, Ojota",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "19, Lukuman Street, Ojota",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789322",
-                "fname":"Goke",
-                "lname":"David",
-                "status":"Saved",
-                "date":"24/02/18"
+                "fname": "Goke",
+                "lname": "David",
+                "status": "Saved",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "24/02/18"
 
             },
 
             {
-                "id":"4",
+                "id": "4",
                 "name": "Yakubu Dogara George",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -769,45 +811,59 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
                 "cname": "Chigbo Joseph",
                 "cfname": "Chigbo",
                 "clname": "Joseph",
-                "caddress":"1, Oyo Street, Maryland",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "1, Oyo Street, Maryland",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789323",
-                "fname":"Isreal",
-                "lname":"Adedayo",
-                "status":"Submitted",
-                "date":"23/02/18"
+                "fname": "Isreal",
+                "lname": "Adedayo",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "23/02/18"
 
             },
             {
-                "id":"5",
+                "id": "5",
                 "name": "Francis Finish Futa",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -820,46 +876,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
                 "cname": "Oyerike Aderike",
                 "cfname": "Oyerike",
                 "clname": "Aderike",
-                "caddress":"112, Jibowu Street, Yaba",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "112, Jibowu Street, Yaba",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789324",
-                "fname":"Kazeem",
-                "lname":"Wasiu",
-                "status":"Approved",
-                "date":"22/02/18"
+                "fname": "Kazeem",
+                "lname": "Wasiu",
+                "status": "Approved", 
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "22/02/18"
 
             },
 
             {
-                "id":"6",
+                "id": "6",
                 "name": "Emmanuel Martins Olajide",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -872,41 +942,55 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Ajisafe Tosin",
+                "cname": "Ajisafe Tosin",
                 "cfname": "Ajisafe",
                 "clname": "Tosin",
-                "caddress":"15, Alagbaka Street, Akure",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "15, Alagbaka Street, Akure",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789325",
-                "fname":"Joy",
-                "lname":"Kwere",
-                "status":"Submitted",
-                "date":"21/02/18"
+                "fname": "Joy",
+                "lname": "Kwere",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "21/02/18"
 
             }
 
@@ -925,7 +1009,7 @@ export class AppdataProvider {
 
         let data = [
             {
-                "id":"1",
+                "id": "1",
                 "name": "Adeyemo Samuel O.",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -938,46 +1022,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Busola Ogunjemilua",
+                "cname": "Busola Ogunjemilua",
                 "cfname": "Busola",
                 "clname": "Ogunjemilua",
-                "caddress":"8, Ajelogo Road, Ketu",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "8, Ajelogo Road, Ketu",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789320",
-                "fname":"Mide",
-                "lname":"Adejoke",
-                "status":"Approved",
-                "date":"26/02/18"
+                "fname": "Mide",
+                "lname": "Adejoke",
+                "status": "Approved",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "26/02/18"
 
             },
 
             {
-                "id":"2",
+                "id": "2",
                 "name": "Iyanu Adebayo Hakeem",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -990,46 +1088,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Ayanwale Adenuga",
+                "cname": "Ayanwale Adenuga",
                 "cfname": "Ayanwale",
                 "clname": "Adenuga",
-                "caddress":"10, Ketu Road, Ikeja",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "10, Ketu Road, Ikeja",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789321",
-                "fname":"Temitayo",
-                "lname":"Oluwaseun",
-                "status":"Submitted",
-                "date":"25/02/18"
+                "fname": "Temitayo",
+                "lname": "Oluwaseun",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "25/02/18"
 
             },
 
             {
-                "id":"3",
+                "id": "3",
                 "name": "Mike Ayodeji Olawale",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -1042,46 +1154,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Temmy Aganga",
+                "cname": "Temmy Aganga",
                 "cfname": "Temmy",
                 "clname": "Aganga",
-                "caddress":"19, Lukuman Street, Ojota",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "19, Lukuman Street, Ojota",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789322",
-                "fname":"Prosper",
-                "lname":"Otemuyiwa",
-                "status":"Saved",
-                "date":"24/02/18"
+                "fname": "Prosper",
+                "lname": "Otemuyiwa",
+                "status": "Saved",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "24/02/18"
 
             },
 
             {
-                "id":"4",
+                "id": "4",
                 "name": "Yakubu Dogara George",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -1094,45 +1220,59 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
                 "cname": "Chigbo Joseph",
                 "cfname": "Chigbo",
                 "clname": "Joseph",
-                "caddress":"1, Oyo Street, Maryland",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "1, Oyo Street, Maryland",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789323",
-                "fname":"Miracle",
-                "lname":"Ayodeji",
-                "status":"Submitted",
-                "date":"23/02/18"
+                "fname": "Miracle",
+                "lname": "Ayodeji",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "23/02/18"
 
             },
             {
-                "id":"5",
+                "id": "5",
                 "name": "Francis Finish Futa",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -1145,46 +1285,60 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
                 "cname": "Oyerike Aderike",
                 "cfname": "Oyerike",
                 "clname": "Aderike",
-                "caddress":"112, Jibowu Street, Yaba",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "112, Jibowu Street, Yaba",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789324",
-                "fname":"Banjo",
-                "lname":"Emmanuel",
-                "status":"Approved",
-                "date":"22/02/18"
+                "fname": "Banjo",
+                "lname": "Emmanuel",
+                "status": "Approved",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "22/02/18"
 
             },
 
             {
-                "id":"6",
+                "id": "6",
                 "name": "Emmanuel Martins Olajide",
                 "address": "7, Onitsha Street, off Agege Road",
                 "town": "Oshodi",
@@ -1197,49 +1351,57 @@ export class AppdataProvider {
                 "idnumber": "A234567890",
                 "comments": "I love this app",
                 "bname": "Mike Ayodeji Olawale",
-                "baddress":"5, Joel Ogunsola, Ikeja",
-                "bphone":"07032453245",
+                "baddress": "5, Joel Ogunsola, Ikeja",
+                "bphone": "07032453245",
                 "baccount": "0017674230",
                 "bcountries": "Canada",
                 "bpostcode": "5012843",
-                "cname":"Ajisafe Tosin",
+                "cname": "Ajisafe Tosin",
                 "cfname": "Ajisafe",
                 "clname": "Tosin",
-                "caddress":"15, Alagbaka Street, Akure",
-                "ibname":"Ismail Olabode",
-                "ibswiftcode":"2345163663526",
+                "caddress": "15, Alagbaka Street, Akure",
+                "ibname": "Ismail Olabode",
+                "ibswiftcode": "2345163663526",
                 "ibaddress": "9, Isale Eko Street, Idumota, Lagos",
-                "ibcity":"Idumota",
-                "ibstate":"Lagos",
+                "ibcity": "Idumota",
+                "ibstate": "Lagos",
                 "ibpostalcode": "10112342",
                 "bbname": "Agboola Blessing",
-                "bbaddress":"Block C, Plot 4, Obasanjo Road, Abuja",
-                "bbcity":"Abuja",
-                "bbcountry":"Nigeria",
-                "bbswiftcode":"245273456235",
-                "bbstate":"Abuja",
-                "bbpostalcode":"10011232",
-                "payment":"Shipment of A",
-                "amount":"$5,000",
+                "bbaddress": "Block C, Plot 4, Obasanjo Road, Abuja",
+                "bbcity": "Abuja",
+                "bbcountry": "Nigeria",
+                "bbswiftcode": "245273456235",
+                "bbstate": "Abuja",
+                "bbpostalcode": "10011232",
+                "payment": "Shipment of A",
+                "amount": "$5,000",
                 "charge": "$1,045",
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
-                "valid":"null",
+                "valid": "null",
                 "transfer": "null",
                 "estimated": "$1,200",
                 "formnumber": "321456789325",
-                "fname":"Ronke",
-                "lname":"Adebimpe",
-                "status":"Submitted",
-                "date":"21/02/18"
+                "fname": "Ronke",
+                "lname": "Adebimpe",
+                "status": "Submitted",
+                "nepc": "97465256",
+                "rcnumber": "RC3425163",
+                "domammount": "$273",
+                "pincode": "325354524",
+                "proforma": "23412321",
+                "description": "Nice goods",
+                "quantity": "100",
+                "weight": "50",
+                "fob": "234",
+                "cf": "129",
+                "hs": "1000",
+                "gross": "30",
+                "goods": "1300",
+                "freight": "23",
+                "date": "21/02/18"
 
             }
-
-
-
-
-
-
 
         ];
 

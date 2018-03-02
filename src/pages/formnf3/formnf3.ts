@@ -52,31 +52,17 @@ export class Formnf3Page {
    this.currencyData=this.appdata.getCurrency();
   }
 
-  save(){ 
-    if (!this.verify.verifyFormNXP3(this.sdate,this.shipment,this.pdate,this.discharge,this.proforma,
-      this.description,this.quantity,this.weight,this.currency,this.fob,this.cf,
-      this.hs,this.gross,this.goods,this.freight)) {
-      alert(this.verify.errorMessage);
-      this.alertCtrl.create({
-        subTitle: 'Message',
-        message: this.verify.errorMessage
-      }).present();
-      return false;
-    }
-    
-  }
-
   submit(){ 
-    if (!this.verify.verifyFormNXP3(this.sdate,this.shipment,this.pdate,this.discharge,this.proforma,
-      this.description,this.quantity,this.weight,this.currency,this.fob,this.cf,
-      this.hs,this.gross,this.goods,this.freight)) {
-      alert(this.verify.errorMessage);
-      this.alertCtrl.create({
-        subTitle: 'Message',
-        message: this.verify.errorMessage
-      }).present();
-      return false;
-    }
+    // if (!this.verify.verifyFormNXP3(this.sdate,this.shipment,this.pdate,this.discharge,this.proforma,
+    //   this.description,this.quantity,this.weight,this.currency,this.fob,this.cf,
+    //   this.hs,this.gross,this.goods,this.freight)) {
+    //   alert(this.verify.errorMessage);
+    //   this.alertCtrl.create({
+    //     subTitle: 'Message',
+    //     message: this.verify.errorMessage
+    //   }).present();
+    //   return false;
+    // }
     
   }
 

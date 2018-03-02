@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the Formnd2Page page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AppdataProvider } from '../../providers/appdata/appdata';
+import { DatePicker } from '@ionic-native/date-picker';
 
 @IonicPage()
 @Component({
@@ -14,12 +9,50 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'formnd2.html',
 })
 export class Formnd2Page {
+  selectedItem2: any;
+  selectedItem: any;
+  cityData: any = [];
+  stateData: any = [];
+  countryData: any = [];
+  accountData: any = [];
+  domiciliaryData: any = [];
+  formpurposeData: any = [];
+  chargeData: any = [];
+  prefixData: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    private datePicker: DatePicker,
+    private appdata: AppdataProvider,
+    public navParams: NavParams) {
+
+      this.datePicker.show({
+        date: new Date(),
+        mode: 'date',
+        androidTheme: this.datePicker.ANDROID_THEMES.THEME_HOLO_DARK
+      }).then(
+        date => console.log('Got date: ', date),
+        err => console.log('Error occurred while getting date: ', err)
+      );
   }
 
+  
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Formnd2Page');
+    this.selectedItem2 = this.navParams.get('selectedItem');
+    this.stateData = this.appdata.getState();
+    this.countryData = this.appdata.getCountry();
+    this.cityData= this.appdata.getCity();
+    this.accountData= this.appdata.getAccount();
+    this.domiciliaryData= this.appdata.getDomiciliary();
+    this.formpurposeData=this.appdata.getFormP();
+    this.chargeData=this.appdata.getCharge();
+    this.prefixData=this.appdata.getPrefix();
+  }
+
+  next() {
+    this.navCtrl.push('Formnd3Page', {
+      selectedItem2: this.selectedItem2,
+    });
   }
 
 }
