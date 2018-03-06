@@ -1373,7 +1373,7 @@ export class AppdataProvider {
                 "bbpostalcode": "10011232",
                 "payment": "Shipment of A",
                 "amount": "$5,000",
-                "charge": "$1,045",
+                "charge": "$1,045", 
                 "applied": "Five thousand US Dollars",
                 "info": "FCMB International Trade. Tell me more",
                 "valid": "null",

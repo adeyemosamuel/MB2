@@ -12,9 +12,9 @@ export class MorePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
+  ionViewDidLoad() { 
     
-  }
+  } 
 
   swipe(event) {
     if(event.direction === 2) {
@@ -23,6 +23,22 @@ export class MorePage {
     if(event.direction === 4) {
       this.navCtrl.parent.select(0);
     }
+  }
+
+  changeUsername(){
+this.navCtrl.push('UsernamePage');
+  }
+
+  changePassword(){
+    this.navCtrl.push('PasswordPage');
+  }
+
+  notifications(){
+    this.navCtrl.push('NotificationsPage');
+  }
+
+  logout(){
+    this.navCtrl.setRoot('LoginPage');
   }
 
 }
