@@ -11,20 +11,21 @@ import { ServerServiceProvider } from '../../providers/server-service/server-ser
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  
-  username: string = '';
-  password: string = '';
-  // disabled: boolean = true;
-  
- 
+  LoginData: any;
+
+  userName: string = '';
+  passWord: string = '';
+  // disableButton: boolean = true; 
+
+
 
   constructor(public navCtrl: NavController,
-     public navParams: NavParams,
-     public loadingCtrl: LoadingController,
-     private store: Storage,
-     private server: ServerServiceProvider) {
-     
-    
+    public navParams: NavParams,
+    public loadingCtrl: LoadingController,
+    private store: Storage,
+    private server: ServerServiceProvider) {
+
+
   }
 
   ionViewDidLoad() {
@@ -32,41 +33,37 @@ export class LoginPage {
   }
 
   // validateInput(val){
-  //   if (this.username.trim != null && this.password != ''){
-  //     this.disabled = false;
+  //   if (this.userName.trim != null && this.passWord != ''){
+  //     this.disableButton = false;
   //   }else{
-  //     this.disabled = true;
+  //     this.disableButton = true;
   //   }
   // }
 
   async Login() {
-    let loader = this.loadingCtrl.create({
-      spinner: "circles",
-      content: 'Please wait....',
-      duration:100
-    });
+    let loader = this.loadingCtrl.create({spinner: "circles", content: 'Please wait....', duration: 100});
     loader.present();
 
-    // let body = {
-    //   username: 'morayo.temi-bello',
-    //   password: 'chigbo'
-    // };
+    let body = {
+        userName: 'Chrissy:C000854',
+        passWord: 'password100'
+    };
 
-    // try {
-    //   let response = await this.server.processData(body, '/login');
-    //   console.log(response);
-    //   this.LoginForm = response;
+    try {
+        let response = await this.server.processData(body, '/user/Signin');
+        console.log(response);
+        if (response.status === '00') {
+            this.store.set('token', response.data.token);
+            this.navCtrl.push('TabsPage');
+        } else {
+            alert(response.message);
+        }
+    } catch (err) {
+        console.log(err);
+    }
+    loader.dismiss();
+}
 
-    // } catch (err) {
-    //   console.log(err);
-    // }
-  //  loader.dismiss();
-
-    this.navCtrl.push('TabsPage');
-
-  }
-  
- 
 
 
 }

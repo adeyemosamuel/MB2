@@ -113,3 +113,36 @@ export class MorePage {
 
 }
 
+
+{
+    "status": "00",
+    "message": "Login successful",
+    "data": {
+        "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJDaHJpc3N5OkMwMDA4NTQiLCJhdWRpZW5jZSI6IndlYiIsImNyZWF0ZWQiOjE1MjA0MzU2MTAyNzgsImV4cCI6MTUyMzQzNTYxMH0.nv_90yapAeYwP9N-azkJ5AanE0eZvj_zwqYQDRZ0UPfLcx9ZwR1fIijY9bgFHfBkdEJNYSHXMoE2eiAIOChrvw"
+    }
+}
+
+
+async Login() {
+    let loader = this.loadingCtrl.create({spinner: "circles", content: 'Please wait....', duration: 100});
+    loader.present();
+
+    let body = {
+        userName: 'Chrissy:C000854',
+        passWord: 'password100'
+    };
+
+    try {
+        let response = await this.server.processData(body, '/user/Signin');
+        console.log(response);
+        if (response.status === '00') {
+            this.storage.set('token', response.data.token);
+            this.navCtrl.push('TabsPage');
+        } else {
+            alert(response.message);
+        }
+    } catch (err) {
+        console.log(err);
+    }
+    loader.dismiss();
+}

@@ -7,7 +7,7 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class ServerServiceProvider {
   
-//  url: string ='http://192.168.8.104/api/v1/forma/C000123/all';
+//  url: string ='http://192.168.141.1:8082/api/user/Signin';
  
   url: string = '/api';
 

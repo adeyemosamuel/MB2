@@ -5,7 +5,7 @@
   "proxies": [
     {
       "path": "/api",
-      "proxyUrl": "http://192.168.8.104:8082/api/v1/forma/C000123/all"
+      "proxyUrl": "http://192.168.141.1:8082/api/user/Signin"
     }
   ],
   "integrations": {
