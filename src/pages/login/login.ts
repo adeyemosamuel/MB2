@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ServerServiceProvider } from '../../providers/server-service/server-service';
 
@@ -11,7 +11,7 @@ import { ServerServiceProvider } from '../../providers/server-service/server-ser
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  LoginData: any;
+//   LoginData: any;
 
   userName: string = '';
   passWord: string = '';
@@ -21,6 +21,7 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
+    private alertCtrl: AlertController,
     public loadingCtrl: LoadingController,
     private store: Storage,
     private server: ServerServiceProvider) {
