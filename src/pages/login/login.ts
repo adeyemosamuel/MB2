@@ -7,64 +7,63 @@ import { ServerServiceProvider } from '../../providers/server-service/server-ser
 
 @IonicPage()
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+    selector: 'page-login',
+    templateUrl: 'login.html',
 })
 export class LoginPage {
-//   LoginData: any;
-
-  userName: string = '';
-  passWord: string = '';
-  // disableButton: boolean = true; 
+    userName: string = '';
+    passWord: string = '';
+    // disableButton: boolean = true; 
 
 
 
-  constructor(public navCtrl: NavController,
-    public navParams: NavParams,
-    private alertCtrl: AlertController,
-    public loadingCtrl: LoadingController,
-    private store: Storage,
-    private server: ServerServiceProvider) {
+    constructor(public navCtrl: NavController,
+        public navParams: NavParams,
+        private alertCtrl: AlertController,
+        public loadingCtrl: LoadingController,
+        private store: Storage,
+        private server: ServerServiceProvider) {
 
 
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
-
-  // validateInput(val){
-  //   if (this.userName.trim != null && this.passWord != ''){
-  //     this.disableButton = false;
-  //   }else{
-  //     this.disableButton = true;
-  //   }
-  // }
-
-  async Login() {
-    let loader = this.loadingCtrl.create({spinner: "circles", content: 'Please wait....', duration: 100});
-    loader.present();
-
-    let body = {
-        userName: 'Chrissy:C000854',
-        passWord: 'password100'
-    };
-
-    try {
-        let response = await this.server.processData(body, '/user/Signin');
-        console.log(response);
-        if (response.status === '00') {
-            this.store.set('token', response.data.token);
-            this.navCtrl.push('TabsPage');
-        } else {
-            alert(response.message);
-        }
-    } catch (err) {
-        console.log(err);
     }
-    loader.dismiss();
-}
 
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad LoginPage');
+    }
 
+    // validateInput(val){
+    //   if (this.userName.trim != null && this.passWord != ''){
+    //     this.disableButton = false;
+    //   }else{
+    //     this.disableButton = true;
+    //   }
+    // }
+
+    async Login() {
+        // let loader = this.loadingCtrl.create({ spinner: "circles", content: 'Please wait....', duration: 100 });
+        // loader.present();
+
+        // let body = {
+        //     userName: 'Chrissy:C000854',
+        //     passWord: 'password100'
+        // };
+
+        // try {
+        //     let response = await this.server.processData(body, '/user/Signin');
+        //     console.log(response);
+        //     if (response.status === '00') {
+        //         this.store.set('token', response.data.token);
+                this.navCtrl.push('TabsPage');
+        //     } else {
+        //         alert(response.message);
+        //     }
+        // } catch (err) {
+        //     console.log(err);
+        // }
+
+        // loader.dismiss();
+        
+       
+    }
 
 }
