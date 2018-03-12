@@ -61,9 +61,11 @@ export class LoginPage {
         //     console.log(err);
         // }
 
-        // loader.dismiss();
-        
-       
+        // loader.dismiss(); 
+    }
+
+    forgot(){
+        this.navCtrl.push('ForgotPage');
     }
 
 }

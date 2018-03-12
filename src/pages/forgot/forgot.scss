@@ -1,0 +1,50 @@
+page-forgot {
+    ion-content{
+background-color: #f5f5f5;
+}
+
+ion-footer{
+    background-color: #f5f5f5;
+}
+
+.toolbar-background{
+    background-color: #f5f5f5;    
+}
+
+.main-content {
+    height: 100%;
+  } 
+
+  [text-color="my-custom-color2"] {
+    color: #ffb822;
+}
+
+
+.item1{
+    border: 1px solid darkgray !important;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0);
+}
+
+
+.money{
+    padding-top: 50% !important; 
+}
+
+.general{
+  
+    // border: 1px solid;
+   border-radius: 5px;
+    padding: 10px;
+     box-shadow: 2px 1px 4px darkgray;
+ }
+ .back-arrow-button {
+    .fa-long-arrow-alt-left {
+      color: map-get($colors, dark) !important;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-top: 4px;
+    }
+  }
+
+}

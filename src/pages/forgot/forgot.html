@@ -1,0 +1,36 @@
+<ion-header no-border>
+    <ion-navbar hideBackButton>
+      <ion-buttons left>
+        <button ion-button icon-only class="back-arrow-button" (click)="goBack()">
+          <i class="fas fa-long-arrow-alt-left"></i>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+<div class="money">
+  <div class="general">
+    <span><b>FORGOT PASSWORD?</b></span>
+
+    <p>Email</p>
+
+    <ion-item no-lines class="item1">
+      <ion-icon color="fcmb" name="mail" item-start></ion-icon>
+      <ion-input [(ngModel)]="forgot" placeholder="Enter email" type="text"></ion-input>
+    </ion-item>
+
+
+    <button ion-button clear block>RESET PASSWORD</button>
+
+  </div>
+
+</div>
+
+<ion-footer no-border>
+    <ion-toolbar>
+        <button ion-button clear block>Login</button>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
