@@ -40,8 +40,8 @@ export class LoginPage {
     // }
 
     async Login() {
-        // let loader = this.loadingCtrl.create({ spinner: "circles", content: 'Please wait....', duration: 100 });
-        // loader.present();
+        let loader = this.loadingCtrl.create({ spinner: "circles", content: 'Please wait....', duration: 100 });
+        loader.present();
 
         let body = {
             userName: 'Chrissy:C000854',
@@ -61,7 +61,7 @@ export class LoginPage {
             console.log(err);
         }
 
-        // loader.dismiss(); 
+        loader.dismiss(); 
     }
 
     forgot(){
