@@ -40,28 +40,28 @@ export class LoginPage {
     // }
 
     async Login() {
-        let loader = this.loadingCtrl.create({ spinner: "circles", content: 'Please wait....', duration: 100 });
-        loader.present();
+        // let loader = this.loadingCtrl.create({ spinner: "circles", content: 'Please wait....', duration: 100 });
+        // loader.present();
 
-        let body = {
-            userName: 'Chrissy:C000854',
-            passWord: 'password123'  
-        };
+        // let body = {
+        //     userName: 'Chrissy:C000854',
+        //     passWord: 'password123'  
+        // };
 
-        try {
-            let response = await this.server.processData(body, '/user/Signin');
-            console.log(response);
-            if (response.status === '00') {
-                this.store.set('token', response.data.token);
+        // try {
+        //     let response = await this.server.processData(body, '/user/Signin');
+        //     console.log(response);
+        //     if (response.status === '00') {
+        //         this.store.set('token', response.data.token);
                 this.navCtrl.push('TabsPage');
-            } else {
-                alert(response.message);
-            }
-        } catch (err) {
-            console.log(err);
-        }
+        //     } else {
+        //         alert(response.message);
+        //     }
+        // } catch (err) {
+        //     console.log(err);
+        // }
 
-        loader.dismiss(); 
+        // loader.dismiss(); 
     }
 
     forgot(){
