@@ -11,6 +11,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ForgotPage {
 
+  hideBackButton:boolean=true;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
