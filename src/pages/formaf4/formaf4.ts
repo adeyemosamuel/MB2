@@ -14,12 +14,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'formaf4.html',
 })
 export class Formaf4Page {
+  hideButton:boolean=false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Formaf4Page');
+  }
+
+  mikilo(){
+    this.hideButton = !this.hideButton;
   }
 
 }

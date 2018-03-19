@@ -106,4 +106,10 @@ page-formaf4 {
         .button{
             margin-top: 20px;
         }
+
+        i {
+            margin-left: auto !important;
+            font-size: 20px !important;
+            color: map-get($colors, fcmb2);
+        }
 }
