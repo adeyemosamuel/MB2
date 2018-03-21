@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, AlertController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { ServerServiceProvider } from '../../providers/server-service/server-service';
+import { ToastController } from 'ionic-angular/components/toast/toast-controller';
 
 
 
@@ -20,6 +21,7 @@ export class LoginPage {
     constructor(public navCtrl: NavController,
         public navParams: NavParams,
         private alertCtrl: AlertController,
+        private toastCtrl: ToastController,
         public loadingCtrl: LoadingController,
         private store: Storage,
         private server: ServerServiceProvider) {
@@ -55,10 +57,11 @@ export class LoginPage {
         //         this.store.set('token', response.data.token);
                 this.navCtrl.push('TabsPage');
         //     } else {
-        //         alert(response.message);
+        //         this.createToaster(response.message);
         //     }
         // } catch (err) {
         //     console.log(err);
+        //this.createToaster('Unable to login. Try again later.');
         // }
 
         // loader.dismiss(); 
@@ -67,5 +70,21 @@ export class LoginPage {
     forgot(){
         this.navCtrl.push('ForgotPage');
     }
+
+
+     // Toast Creation Method
+//   createToaster(msg){
+    
+//     let toaster = this.toastCtrl.create({
+//       message: msg,
+//       showCloseButton: true,
+//       closeButtonText: 'OK',
+//       cssClass: 'toastStyle',
+//       position: 'middle'
+//     });
+//     toaster.present();
+//   }
+
+
 
 }
