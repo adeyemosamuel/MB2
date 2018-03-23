@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
-import { AppdataProvider } from '../../providers/appdata/appdata';
+
 
 @IonicPage()
 @Component({
@@ -8,24 +8,25 @@ import { AppdataProvider } from '../../providers/appdata/appdata';
   templateUrl: 'test.html',
 })
 export class TestPage {
-   searchTerm: any;
-   bdata: Array<any> = [];
-   searchNameData:string = '';
+  selectedItem: any;
+  baccount:any;
+  bname:any;
+  bbswiftcode:any;
+  name:any;
+  b:any;
   hideButton:boolean=false;
   hideButton2:boolean=false;
   hideButton3:boolean=false;
   hideButton4:boolean=false;
   hideButton5:boolean=false;
 
-
   constructor(public navCtrl: NavController,
-  private appdata: AppdataProvider,
   public modalCtrl: ModalController, 
    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
- this.bdata=this.appdata.getInfo();
+    this.selectedItem= this.navParams.get('b');
   }
 
 mikilo(){
@@ -51,9 +52,13 @@ mikilo(){
   searchModal(){
     let modal = this.modalCtrl.create('TestModalPage');
     modal.present();
-    modal.onDidDismiss(data => {
-      console.log(data); 
-      this.searchNameData = data;
-    });
+    // modal.onDidDismiss(data => {
+    //   // console.log(data); 
+    //   // this.bNameData = data;
+    // });
    }
+
+   isReadonly() {
+    return this.isReadonly;   //return true/false 
+  }
 }

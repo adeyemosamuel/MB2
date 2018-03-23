@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController,ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { AppdataProvider } from '../../providers/appdata/appdata';
 
 @IonicPage()
 @Component({
@@ -8,18 +9,33 @@ import { IonicPage, NavController, NavParams, ViewController,ModalController } f
 })
 export class TestModalPage {
 
+  searchTerm: string='';
+ 
+  bdata:Array<any>=[];
+
   constructor(public navCtrl: NavController,
   public viewCtrl:ViewController,
-  public modalCtrl: ModalController,
+  private appdata: AppdataProvider,
    public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    
+  ionViewDidLoad() { 
+   this.getbNameLists();
   }
+
+  getbNameLists(){
+    this.bdata=this.appdata.getInfo();
+  }
+
 
   selectCancel(){
     this.viewCtrl.dismiss('');
+  }
+
+  itemTapped(b){
+    this.navCtrl.push('TestPage', {
+      b:b
+    });
   }
 
 }

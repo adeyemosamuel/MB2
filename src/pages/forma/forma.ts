@@ -49,7 +49,7 @@ export class FormaPage {
   itemTapped(a){
     this.navCtrl.push('FormadPage', {
       a:a
-    });
+    }); 
   }
 
   fab(){

@@ -19,12 +19,32 @@
     </ion-item-divider>
 
     <div *ngIf="hideButton" padding>
-      <button class="add" color="fcmb" ion-button small item-end>Add New</button>
+      <button class="add" color="fcmb" ion-button small item-end>Add New Beneficiary</button>
 
       <ion-list>
         <ion-item no-lines (click)="searchModal()">
-          <span>Beneficiary Name</span>
+          <span>Search Beneficiaries</span>
           <i class="fas fa-search" item-end></i>
+        </ion-item>
+
+        <ion-item no-lines>
+            <ion-label stacked>Beneficiary Name*</ion-label>
+            <ion-input  [readonly]="isReadonly()"  [ngModel]="selectedItem?.bname" (ngModelChange)="selectedItem.bname= $event" type="text"></ion-input>
+          </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Account Number*</ion-label>
+          <ion-input  [readonly]="isReadonly()"  [ngModel]="selectedItem?.baccount" (ngModelChange)="selectedItem.baccount= $event" type="number"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Account Name*</ion-label>
+          <ion-input [readonly]="isReadonly()" [ngModel]="selectedItem?.name" (ngModelChange)="selectedItem.name= $event" type="text" ></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Swift Code*</ion-label>
+          <ion-input [readonly]="isReadonly()" [ngModel]="selectedItem?.bbswiftcode" (ngModelChange)="selectedItem.bbswiftcode= $event" type="number"></ion-input>
         </ion-item>
       </ion-list>
     </div>
