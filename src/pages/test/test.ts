@@ -52,10 +52,6 @@ mikilo(){
   searchModal(){
     let modal = this.modalCtrl.create('TestModalPage');
     modal.present();
-    // modal.onDidDismiss(data => {
-    //   // console.log(data); 
-    //   // this.bNameData = data;
-    // });
    }
 
    isReadonly() {
