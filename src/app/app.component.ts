@@ -10,7 +10,7 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any= 'LoginPage';
+  rootPage:any= 'TestPage';
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     

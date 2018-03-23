@@ -146,3 +146,33 @@ async Login() {
     }
     loader.dismiss();
 }
+
+
+HTML FORM A B. Detail
+
+ <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-list >
+
+        <ion-item class="general" no-lines *ngFor="let b of bdata">
+          <ion-grid>
+            <ion-row>
+              <ion-col col-6 text-left>
+                <p>{{b.bname}}</p>
+              </ion-col>
+
+              <ion-col col-6 text-right>
+                <p>{{b.baccount}}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                  <p>{{b.bank}}</p>
+              </ion-col>
+              <!-- <ion-col>
+                  <button ion-button clear>View</button>
+              </ion-col> -->
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+
+      </ion-list>

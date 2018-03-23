@@ -11,61 +11,57 @@
   </ion-header>
   
   
-  <ion-content padding>
+  <ion-content>
   
     <ion-item-group>
-  <div class="beneficiary">
-        <h4 no-lines color="fcmb" text-color="my-custom-color">BENEFICIARY DETAILS</h4>
-      </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item1">
-        <ion-input placeholder="*Beneficiary Name" [(ngModel)]="bname" type="text"></ion-input>
+        <ion-item-divider>
+            <span>BENEFICIARY DETAILS</span>
+          </ion-item-divider>
+          <div padding>
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label stacked>Beneficiary Name*</ion-label>
+        <ion-input [(ngModel)]="bname" type="text"></ion-input>
       </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item2">
-        <ion-input placeholder="*Beneficiary Address" [(ngModel)]="baddress" type="text"></ion-input>
+ 
+      <ion-item no-lines>
+          <ion-label stacked>Beneficiary Address*</ion-label>
+        <ion-input [(ngModel)]="baddress" type="text"></ion-input>
       </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item3">
-        <ion-input placeholder="Beneficiary Phone/Fax" [(ngModel)]="bphone" type="tel"></ion-input>
-      </ion-item>
-    </div>
-  
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item4">
-        <ion-input placeholder="Account Number" [(ngModel)]="baccount" type="tel"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div class="countries">
-        <span text-color="my-custom-color2">Beneficiary Country</span>
-      </div>
     
-      <div>
-        <ion-item style="color:white" no-lines class="item5">
-          <ion-select class="Select" [(ngModel)]="bcountries">
+  
+   
+      <ion-item no-lines>
+          <ion-label stacked>Beneficiary Phone/Fax</ion-label>
+        <ion-input [(ngModel)]="bphone" type="tel"></ion-input>
+      </ion-item>
+   
+      <ion-item no-lines >
+          <ion-label stacked>Account Number/Fax</ion-label>
+        <ion-input [(ngModel)]="baccount" type="tel"></ion-input>
+      </ion-item>
+  
+        <ion-item no-lines>
+            <ion-label stacked>Beneficiary Country</ion-label>
+          <ion-select interface="action-sheet"  class="Select" [(ngModel)]="bcountries">
             <ion-option class="option" [value]="c.country" *ngFor="let c of countryData">{{c.country}}</ion-option>
           </ion-select>
         </ion-item>
-      </div>
   
-    <div>
-      <ion-item style="color:white" no-lines class="item6">
-        <ion-input placeholder="Beneficiary Post Code" [(ngModel)]="bpostcode" type="text"></ion-input>
+      <ion-item no-lines>
+          <ion-label stacked>Beneficiary Post Code</ion-label>
+        <ion-input  [(ngModel)]="bpostcode" type="text"></ion-input>
       </ion-item>
-    </div>
+
+    </ion-list>
   
-      <div class="button">
-          <button ion-button block tappable color="fcmb2" (click)="next()">
+          <button class="button" ion-button block tappable color="fcmb" (click)="next()">
             <span style="font-weight:bold; color:white">NEXT</span>
           </button>
-          </div>
+
+         </div>
+
+         
         </ion-item-group>
   
   </ion-content>

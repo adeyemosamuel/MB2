@@ -15,6 +15,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Formaf4Page {
   hideButton:boolean=false;
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

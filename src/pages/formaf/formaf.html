@@ -1,128 +1,103 @@
 <ion-header>
 
-    <ion-navbar color="fcmb">
-      <ion-title text-center>
-        <span text-color="my-custom-color">FORM A</span>
-      </ion-title> 
-    </ion-navbar> 
-  
-  
-  </ion-header>
-  
-  
-  <ion-content padding>
-  
-    <ion-item-group>
-  <div class="general">
-        <h4 no-lines color="fcmb" text-color="my-custom-color">GENERAL DETAILS</h4>
-      </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item1">
-        <ion-input placeholder="*Enter Full Name" [(ngModel)]="name" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item2">
-        <ion-input placeholder="*Address" [(ngModel)]="address" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item3">
-        <ion-input placeholder="*Town" [(ngModel)]="town" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div class="states">
-        <span text-color="my-custom-color2">*Choose a Country</span>
-      </div>
-    
-      <div>
-        <ion-item style="color:white" no-lines class="item5">
-          <ion-select class="Select" [(ngModel)]="countries">
+  <ion-navbar color="fcmb">
+    <ion-title text-center>
+      <span text-color="my-custom-color">FORM A</span>
+    </ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item-group>
+    <ion-item-divider>
+      <span>GENERAL DETAILS</span>
+    </ion-item-divider>
+    <div padding>
+      <ion-list>
+        <ion-item no-lines>
+          <ion-label stacked>Corporate Name*</ion-label>
+          <ion-input [(ngModel)]="name" type="text"></ion-input>
+        </ion-item>
+
+
+        <ion-item no-lines>
+          <ion-label stacked>Address*</ion-label>
+          <ion-input [(ngModel)]="address" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Town*</ion-label>
+          <ion-input [(ngModel)]="town" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+            <ion-label stacked>Country*</ion-label>
+          <ion-select interface="action-sheet" class="Select" [(ngModel)]="countries">
             <ion-option class="option" [value]="c.country" *ngFor="let c of countryData">{{c.country}}</ion-option>
           </ion-select>
         </ion-item>
-      </div>
-  
-      <!-- *ngIf="countries =='Nigeria'" -->
-  
-    <!-- <div class="states"> -->
-      <!-- <span class="states" text-color="my-custom-color2">*Choose a State</span> -->
-    <!-- </div> -->
-  
-    <div *ngIf="countries =='Nigeria'" >
-        <span class="states" text-color="my-custom-color2">*Choose a State</span>
-      <ion-item style="color:white" no-lines class="item4">
-        <ion-select class="Select" [(ngModel)]="states">
-          <ion-option *ngFor="let s of stateData">{{s.label}}</ion-option>
-        </ion-select>
-      </ion-item>
-    </div>
-  
-   
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item6">
-        <ion-input placeholder="*Phone Number" [(ngModel)]="phone" type="tel"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item7">
-        <ion-input placeholder="*Email" [(ngModel)]="email" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item7">
-        <ion-input placeholder="Post Code" [(ngModel)]="postcode" type="number"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item7">
-        <ion-input placeholder="Airline" [(ngModel)]="airline" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item7">
-        <ion-input placeholder="Air Ticket No" [(ngModel)]="ticket" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div>
-      <ion-item style="color:white" no-lines class="item7">
-        <ion-input placeholder="Route" [(ngModel)]="route" type="text"></ion-input>
-      </ion-item>
-    </div>
-  
-    <div class="states">
-      <span text-color="my-custom-color2">*Mode of Identification</span>
-    </div>
-    <div>
-      <ion-item style="color:white" no-lines class="item8">
-        <ion-select class="Select" [(ngModel)]="identification">
+
+        <ion-item *ngIf="countries =='Nigeria'" no-lines>
+          <ion-label stacked>Choose a State*</ion-label>
+          <ion-select interface="action-sheet" class="Select" [(ngModel)]="states">
+            <ion-option *ngFor="let s of stateData">{{s.label}}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Phone*</ion-label>
+          <ion-input [(ngModel)]="phone" type="tel"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Email*</ion-label>
+          <ion-input [(ngModel)]="email" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Post Code*</ion-label>
+          <ion-input [(ngModel)]="postcode" type="number"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Airline</ion-label>
+          <ion-input [(ngModel)]="airline" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Air Ticket No*</ion-label>
+          <ion-input [(ngModel)]="ticket" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Route*</ion-label>
+          <ion-input [(ngModel)]="route" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label stacked>Mode of Identification*</ion-label>
+          <ion-select interface="action-sheet" class="Select" [(ngModel)]="identification">
             <ion-option *ngFor="let m of iData">{{m.mode}}</ion-option>
-        </ion-select>
-      </ion-item>
-    </div>
-  
-    <div>
-        <ion-item style="color:white" no-lines class="item9">
+          </ion-select>
+        </ion-item>
+
+
+        <ion-item no-lines>
+          <ion-label stacked>Identification Number*</ion-label>
           <ion-input placeholder="*Identification Number" [(ngModel)]="idnumber" type="text"></ion-input>
         </ion-item>
-      </div>
-  
-    
-      <div class="button">
-          <button ion-button block tappable color="fcmb2" (click)="next()">
-            <span style="font-weight:bold; color:white">NEXT</span>
-          </button>
-          </div>
-        </ion-item-group>
-  
-  </ion-content>
+      </ion-list>
+      <button class="button" ion-button block tappable color="fcmb" (click)="next()">
+        <span style="font-weight:bold; color:white">NEXT</span>
+      </button>
+
+
+
+    </div>
+  </ion-item-group>
+
+</ion-content>
