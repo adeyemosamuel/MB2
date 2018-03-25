@@ -10,7 +10,7 @@ import { AppdataProvider } from '../../providers/appdata/appdata';
 export class TestModalPage {
 
   searchTerm: string='';
- 
+ bname:any;
   bdata:Array<any>=[];
 
   constructor(public navCtrl: NavController,
@@ -36,6 +36,25 @@ export class TestModalPage {
     this.navCtrl.push('TestPage', {
       b:b
     });
+  }
+
+  initializeItems(){
+    this.bdata= this.appdata.getInfo();
+  }
+
+  getItems(ev: any) {
+    // Reset items back to all of the items
+    this.initializeItems();
+
+    // set val to the value of the searchbar
+    let val = ev.target.value; 
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.bdata = this.bdata.filter((item) => {
+        return (item.bname.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
   }
 
 }
